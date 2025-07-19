@@ -12,12 +12,12 @@ const Hooks = () => {
     console.log("Add task", count);
   };
   return (
-    <React.Fragment>
+    <>
       <h1>Tasks: {count}</h1>
       <button onClick={handleClick} value="Add tasks button">
         Add task
       </button>
-    </React.Fragment>
+    </>
   );
 };
 export default Hooks;

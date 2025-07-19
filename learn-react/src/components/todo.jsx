@@ -19,13 +19,14 @@ const Todo = () => {
     return task == 0 ? "No tasks available" : `Task available: ${task}`;
   };
   return (
-    <React.Fragment>
+    <>
       <h1 style={styles}>Create to do lists</h1>
       <p>Created lists: {countTask()}</p>
+      {/* It stores a hidden value that you can access in JavaScript — especially during events like onClick.*/}
       <button disabled={hideButton} value="AddTaskButton">
         Add new todo
       </button>
-    </React.Fragment>
+    </>
   );
 };
 export default Todo;
